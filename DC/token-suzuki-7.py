@@ -105,3 +105,8 @@ while True:
         has_token = False
         send_request()
     time.sleep(random.uniform(1, 3))
+
+'''The Python code implements a distributed mutual exclusion algorithm using MPI for coordinating access to a critical section among multiple 
+processes. Each process sends requests and receives replies to determine when it can enter the
+critical section. The program alternates between executing the critical section and sending requests,
+ensuring mutual exclusion while allowing concurrent computation. '''
