@@ -81,3 +81,13 @@ while True:
     critical_section()
     request_queue = []
     reply_received = [False] * N
+
+
+
+'''The provided Python code implements a basic distributed mutual exclusion algorithm using the Message Passing Interface (MPI) paradigm. The algorithm allows multiple processes to coordinate access to a critical section in a distributed system, ensuring that only one process can execute the critical section at a time. 
+
+Each process in the system communicates with other processes via MPI messages to request access to the critical section. Upon receiving a request, a process evaluates its own state and determines whether to grant or defer the request based on a predefined priority order. The process maintains a queue of pending requests and waits for replies from other processes before proceeding. 
+
+The algorithm employs threading to enable concurrent execution of message sending and receiving operations, ensuring efficient communication between processes. Additionally, the use of locks ensures thread safety when accessing shared data structures such as the request queue and reply flags.
+
+Overall, the algorithm demonstrates a simple yet effective approach to achieving mutual exclusion in a distributed system, facilitating coordinated access to shared resources and preventing conflicts among concurrent processes. '''
